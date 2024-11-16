@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <section class="booktickets">
+            <div class="top">
+                <div class="left">
+                    <h1>Book Tickets</h1>
+                    <h3><a href="./reschedule.html">Reschedule Tickets</a></h3>
+                    <h3><a href="./cancel.html">Cancel Tickets</a></h3>
+                    <h3><a href="./settings.html">Settings</a></h3>
+                </div>
+                <div class="right">
+                    <img src="../assets/logo2.jpeg" alt="">
+                </div>
+            </div>
+            <div class="bottom">
+                <form action="./searchvehicles.html">
+                    <label for="Heading">Online Booking Tickets</label>
+                    <label for="From">From:</label>
+                    <select name="city" id="city" required>
+                        <option value="Your Location">Your Location</option>
+                        <option value="Hanamkonda">Hanamkonda</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Secunderabad">Secunderabad</option>
+                        <option value="Warangal">Warangal</option>
+                    </select>
+                    <label for="To">To:</label>
+                    <select name="city" id="city" required>
+                        <option value="To Reach Location">To Reach Location</option>
+                        <option value="Warangal">Warangal</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="secunderabad">Secunderabad</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Vijayawada">Vijayawada</option>
+                        <option value="Visakhapatnam">Visakhapatnam</option>
+                        <option value="Kurnool">Kurnool</option>
+                        <option value="Tirupati">Tirupati</option>
+                        <option value="Basara">Basara</option>
+                        <option value="Hanamkonda">Hanamkonda</option>
+                    </select>
+                    <label for="Date">Date:</label>
+                    <input type="date" id="date" name="date" placeholder="To Reach Location" required>
+                    <button type="submit" onclick="">Search Vehicles</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
