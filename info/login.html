@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <section class="login">
+            <div class="left">
+                <img src="../assets/logo2.jpeg" alt="">
+            </div>
+            <div class="right">
+                <h1>Login</h1>
+                <h3>Sign In into your account</h3>
+                <form action="./travelagency.html" method="get" onsubmit="return validPhno()">
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Mobile Number" minlength="10" maxlength="10" pattern="[0-9]{10}" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" minlength="8" title="Must contain atleast 8 Characters, including letters & numbers" required>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="./register.html"><br> Register Here!</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
