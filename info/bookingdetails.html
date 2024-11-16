@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <section class="bookingdetails">
+            <div class="top">
+                <div class="left">
+                    <h1>Booking Details</h1>
+                </div>
+                <div class="right">
+                    <img src="../assets/logo2.jpeg" alt="">
+                </div>
+            </div>
+            <div class="bottom">
+                <form action="./paymentdetails.html">
+                    <label for="Name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Name" required>
+                    <label for="Mobile Number">Mobile Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Mobile Number" minlength="10" maxlength="10" pattern="[0-9]{10}" required>
+                    <label for="Type">Type:</label>
+                    <div class="radiobtn">
+                        <input type="radio" name="choice" value="AC">
+                        <label for="AC">AC</label>
+                    </div>
+                    <div class="radiobtn">
+                        <input type="radio" name="choice" value="Non-AC">
+                        <label for="Non-AC">Non-AC</label>
+                    </div>
+                    <div class="radiobtn">
+                        <input type="radio" name="choice" value="Sleeper">
+                        <label for="Sleeper">Sleeper</label>
+                    </div>
+                    <label for="Tickets">Tickets:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="6" value="1" step="1" required>
+                    <button type="submit" onclick="bookNow()">Book Now</button>    
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
