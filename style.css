@@ -1,0 +1,394 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@media (min-width: 360px) {
+    .home .one{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .home .one li{
+        text-align: center;
+        padding: 0.3rem;
+        list-style: none;
+        font-weight: 600;
+        font-size: x-large;
+    }
+    .home .one li a{
+        text-decoration: none;
+        color: black;
+    }
+    .home .main .top .vehicle, .searchvehicles .bottom .vehicles, .availableBuses .bottom .vehicles{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .home .main .top .vehicle img{
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
+    }
+    .home .main .top .vehicle .v1{
+        border: 10px solid red;
+    }
+    .home .main .top .vehicle .v2{
+        border: 10px solid green;
+    }
+    .home .main .top .vehicle .v3{
+        border: 10px solid rgb(255, 100, 0);
+    }
+    .home .main .bottom{
+        text-align: center;
+    }
+    .home .main .bottom h1, .home .main .bottom h3{
+        font-size: 4rem;
+        font-weight: 900;
+        margin: 1rem;
+    }
+    .home .main .bottom h3{
+        font-size: 2rem;
+    }
+    .travelagency, .about, .contactUs, .login, .bookingdetails, .booktickets, .searchvehicles, .availableBuses, .payment, .settings{
+        text-align: center;
+    }
+    .travelagency .top h1, .about .top h1, .contactUs .top h1, .login .right h1, .bookingdetails .top h1, .booktickets .top h1, .searchvehicles .top h1, .availableBuses .top h1, .payment .top h1, .settings .top h1{
+        font-size: xx-large;
+        font-weight: 900;
+        margin: 1rem;
+    }
+    .travelagency .top .right img, .login .left img, .bookingdetails .top .right img, .booktickets .top .right img, .searchvehicles .top .right img, .availableBuses .top .right img, .payment .top .right img, .settings .top .right img{
+        margin: 1rem;
+        height: 160px;
+        width: 320px;
+    }
+    .travelagency .main h3, .about .main h3, .login .right h3, .booktickets .left h3, .payment .bottom .btop .right h3{
+        margin: 0.5rem;
+        font-size: x-large;
+        font-weight: 500;
+    }
+    .travelagency button, .login button, .bookingdetails .bottom form button, .booktickets .bottom form button, .searchvehicles .bottom .vehicles button, .payment .bottom button, .settings .bottom button, .payment .bottom .goback button{
+        width: 80%;
+        padding: 0.5rem;
+        font-size: larger;
+        font-weight: 600;
+        border-radius: 12px;
+        border: 2px solid rgb(1, 17, 121);
+        color: white;
+        background-color: rgb(62, 143, 243);
+    }
+    .travelagency button a, .login .right form button a, .bookingdetails button a, .booktickets button a, .searchvehicles .bottom .vehicles button a, .payment .bottom button a, .settings .bottom button a{
+        text-decoration: none;
+        color: white;
+    }
+    .about .top .right img, .contactUs .top .right img{
+        height: 120px;
+        width: 360px;
+    }
+    .about .main h3{
+        font-weight: 600;
+    }
+    .about .main p{
+        margin: 1rem;
+        font-size: larger;
+        font-weight: 500;
+    }
+    .contactUs .main .details{
+        margin: 0.5rem;
+    }
+    .contactUs .main h3{
+        font-size: x-large;
+        font-weight: 600;
+    }
+    .contactUs .main h4{
+        font-size: larger;
+        font-weight: 500;
+    }
+    .contactUs .main h4 a{
+        text-decoration: none;
+        color: black;
+    }
+    .contactUs .main p, .login .right p{
+        margin: 0.5rem;
+        font-size: x-large;
+        font-weight: 500;
+    }
+    .login{
+        background-image: url('./assets/background.jpeg');
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .login .right form, .bookingdetails .bottom form, .booktickets .bottom form, .settings .bottom form{
+        margin: 0 2rem 0 2rem;
+    }
+    .login .right form label, .bookingdetails .bottom form label, .booktickets .bottom form label, .settings .bottom form label{
+        display: block;
+        font-size: x-large;
+        font-weight: 500;
+    }
+    .login .right form input{
+        height: 2rem;
+        width: 90%;
+        margin: 1rem;
+        text-align: center;
+        display: block;
+        font-size: larger;
+        font-weight: 500;
+        color:  rgb(17, 23, 80);
+        background-color: rgba(128, 128, 128, 0.5);
+        border: none;
+    }
+    .login button{
+        margin-top: 1rem;
+        width: 40%;
+    }
+    .login .right  p{
+        margin-bottom: 0rem;
+    }
+    .bookingdetails .bottom form input, .booktickets .bottom form input, .settings .bottom form input{
+        height: 2.5rem;
+        width: 90%;
+        margin: 0.5rem;
+        text-align: center;
+        display: block;
+        font-size: larger;
+        font-weight: 500;
+        color: rgb(17, 23, 80);
+        background-color: rgba(128, 128, 128, 0.2);
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .bookingdetails .bottom form .radiobtn, .settings .bottom form .checkbox{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .bookingdetails .bottom form .radiobtn input, .settings .bottom form .checkbox input{
+        height: 1.5rem;
+    }
+    .bookingdetails .bottom form .radiobtn label, .settings .bottom form .checkbox label{
+        text-align: start;
+    }
+    .bookingdetails .bottom form button, .booktickets .bottom form button, .settings .bottom button{
+        margin: 1rem 0 2rem 0;
+    }
+    .booktickets .bottom form select{
+        height: 2.5rem;
+        width: 90%;
+        margin: 0.5rem;
+        text-align: center;
+        display: block;
+        font-size: larger;
+        font-weight: 500;
+        color: rgb(20, 31, 137);
+        background-color: rgba(128, 128, 128, 0.2);
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .booktickets .bottom form select option{
+        height: 2rem;
+        margin: 0.3rem;
+        width: max-content;
+        text-align: center;
+        display: block;
+        font-size: medium;
+        font-weight: 500;
+        color: rgb(20, 31, 137);
+        background-color: rgba(128, 128, 128, 0.2);
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .searchvehicles .bottom .vehicles img, .availableBuses .bottom .vehicles img{
+        height: 200px;
+        width: 200px;
+        object-fit: fill;
+        border-radius: 20px;
+    }
+    .searchvehicles .bottom .vehicles button{
+        width: 50%;
+        margin: 1rem 0;
+    }
+
+    .availableBuses .bottom .vehicles .desc{
+        border: 1px solid black;
+        margin: 0.5rem;
+        width: 80%;
+    }
+    .availableBuses .bottom .vehicles .desc a{
+        text-decoration: none;
+        color: black;
+    }
+    .availableBuses .bottom .vehicles .desc  h3{
+        margin: 0.3rem;
+        font-size: x-large;
+        font-weight: 600;
+    }
+    .availableBuses .bottom .vehicles .desc p, .payment .bottom .down .paymentmode p{
+        margin: 0.3rem;
+        font-size: larger;
+        font-weight: 500;
+    }
+    .payment .bottom .up .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .payment .bottom .up .left img{
+        height: 60px;
+        width: 180px;
+        margin: 1rem;
+    }
+    .payment .bottom .up .right h3{
+        margin: 1rem;
+    }
+    .payment .bottom .down .paymentmode{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .payment .bottom .down .paymentmode img{
+        height: 50px;
+        width: 50px;
+        margin: 0.5rem;
+    }
+    .payment .bottom .down .paymentmode p{
+        margin: 0.5rem;
+    }
+    .payment .bottom .right img{
+        margin-top: 2rem;
+        height: 250px;
+        width: 300px;
+    }
+    .booktickets .top .left h3 a{
+        text-decoration: none;
+        color: black;
+    }
+}
+@media (min-width: 600px) {
+    .home .one{
+        margin-top: 1rem;
+    }
+    .home .left ul li, .home .right ul li{
+        margin: 0.5rem;
+    }
+    .home .main .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+    .home .main .bottom h1{
+        margin-top: 3rem;
+    }
+}
+@media (min-width: 700px){
+    .home .one{
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+    .home .one .right ul{
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+    }
+    .login, .bookingdetails, .booktickets, .payment{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .login .left img{
+        margin-top: 2rem;
+    }
+    .login .right h1, .bookingdetails .tops h1{
+        margin: 1rem;
+        margin-top: 5rem;
+    }
+    .register .right h1{
+        margin-top: 2rem;
+    }
+    .login .right p{
+        margin-bottom: 2rem;
+    }
+    .register .right p{
+        margin-bottom: 1rem;
+    }
+    .bookingdetails .bottom form{
+        margin-top: 1rem;
+    }
+    .bookingdetails .bottom form button{
+        margin: 1rem 0 1.8rem 0;
+    }
+    .bookingdetails .form form{
+        margin-top: 5rem;
+    }
+    .bookingdetails .btn form{
+        margin-top: 7.3rem;
+    }
+    .bookingdetails .btn form button{
+        margin-bottom: 10rem;
+    }
+    .booktickets .left h1, .bookingdetails .left h1{
+        margin-top: 5rem;
+    }
+    .booktickets .bottom form{
+        margin-top: 5.5rem;
+    }
+    .booktickets .bottom form button{
+        margin-bottom: 5rem;
+    }
+    .searchvehicles .top .right img, .searchvehicles .bottom .vehicles, .searchvehicles .top h1, .searchvehicles .bottom .vehicles button, .availableBuses .top h1, .availableBuses .top .right img, .availableBuses .bottom .vehicles{
+        margin: 0.5rem;
+    }
+    .searchvehicles .bottom, .availableBuses .bottom{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .searchvehicles .top .right img, .availableBuses .top .right img{
+        height: 150px;
+        width: 300px;
+    }
+    .payment .top, .payment .bottom .up .left, .payment .bottom .left h1{
+        margin-top: 5rem;
+    }
+    .payment .bottom button{
+        margin-bottom: 6.2rem;
+    }
+    .payment .bottom .right img{
+        margin-bottom: 2rem;
+    }
+    .payment .bottom .goback button{
+        margin-bottom: 2.5rem;
+    }
+    .payment .cancel .right img{
+        margin-bottom: 7rem;
+    }
+    .settings .bottom form .setting{
+        display: grid;
+        grid-template-columns: 50% auto;
+    }
+}
+@media (min-width: 1000px){
+    .login .right p{
+        margin-bottom: 3rem;
+    }
+}
+@media (min-width: 1200px){
+    .login .right p{
+        margin-bottom: 8rem;
+    }
+    .login .left img{
+        margin-top: 5rem;
+    }
+    .login .right h1, .bookingdetails .tops h1{
+        margin: 1rem;
+        margin-top: 9.5rem;
+    }
+    .travelagency .main{
+        margin: 4rem;
+    }
+}
